@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interior Cost Estimator & Price Calculator | Ma Aashapuri Furniture</title>
+  <meta name="description" content="Calculate the exact interior design and custom woodwork cost for your 1BHK, 2BHK, 3BHK, 4BHK apartment or villa in real-time with Ma Aashapuri Furniture's price calculator.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+      <div>
+        ✨ <span>100% Price Transparency:</span> Factory-Direct Pricing with Zero Middlemen Margins
+      </div>
+      <div style="display: flex; gap: 16px; align-items: center; font-size: 0.85rem;">
+        <a href="tel:+917769881990" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-phone" style="color: var(--gold-primary);"></i> +91 7769881990</a>
+        <a href="tel:+917769881956" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-phone" style="color: var(--gold-primary);"></i> +91 7769881956</a>
+        <a href="mailto:balvirsuthar191@gmail.com" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-envelope" style="color: var(--gold-primary);"></i> balvirsuthar191@gmail.com</a>
+        <a href="https://www.instagram.com/__ma_ashapurainterior?stkn=cDl4bDkxOGhnOTlz" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;"><i class="fa-brands fa-instagram" style="color: var(--gold-primary);"></i> @_ma_ashapurainterior</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/images/logo/logo.png" alt="Ma Aashapuri Interior &amp; Bespoke Furniture Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">MA AASHAPURI</span>
+          <span class="brand-tagline">INTERIOR &amp; BESPOKE FURNITURE</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="process.html">Paper to Reality</a></li>
+        <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a href="calculator.html" class="active">Cost Estimator</a></li>
+        <li class="nav-item"><a href="about.html">About Us</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta-group">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-pen-ruler"></i> Book Consultation
+        </a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div class="mobile-nav-header">
+      <div class="brand-logo">
+        <img src="assets/images/logo/logo.png" alt="Ma Aashapuri Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">MA AASHAPURI</span>
+        </div>
+      </div>
+      <button class="mobile-close-btn" id="closeDrawerBtn">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="process.html">Paper to Reality</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="calculator.html" class="active">Cost Estimator</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 24px;">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">
+        <i class="fa-solid fa-calendar-check"></i> Book Design Consultation
+      </a>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- Page Header Banner -->
+  <section class="section-sm" style="background: radial-gradient(circle at 50% 30%, rgba(212, 175, 55, 0.1) 0%, transparent 60%), var(--bg-primary); border-bottom: 1px solid rgba(255,255,255,0.06);">
+    <div class="container" style="text-align: center;">
+      <div class="tag-badge"><span class="dot"></span> Real-Time Estimator</div>
+      <h1 style="font-size: clamp(2.4rem, 4vw, 3.6rem); margin-bottom: 16px;">
+        Interior Design <span class="text-gradient-gold">Cost Calculator</span>
+      </h1>
+      <p style="max-width: 720px; margin: 0 auto; font-size: 1.15rem;">
+        Get an accurate, instant breakdown of your interior woodworking, modular kitchen, and full home turnkey budget backed by our factory-direct rates.
+      </p>
+    </div>
+  </section>
+
+  <!-- Full Calculator Interface -->
+  <section class="section">
+    <div class="container">
+      <div class="calculator-card-wrapper">
+        <div class="calc-grid">
+          <!-- Left Configuration Options -->
+          <div class="calc-options-side">
+            <!-- Step 1: Configuration -->
+            <div>
+              <div class="option-group-title">
+                <span class="step-num">1</span> Property Configuration
+              </div>
+              <div class="pill-selector-grid">
+                <label class="pill-option">
+                  <input type="radio" name="bhk_type" value="1 BHK">
+                  <div class="pill-label">
+                    <span class="icon"><i class="fa-solid fa-door-closed"></i></span>
+                    <span class="label-title">1 BHK</span>
+                    <span class="label-sub">Compact Flat</span>
+                  </div>
+                </label>
+                <label class="pill-option">
+                  <input type="radio" name="bhk_type" value="2 BHK" checked>
+                  <div class="pill-label">
+                    <span class="icon"><i class="fa-solid fa-bed"></i></span>
+                    <span class="label-title">2 BHK</span>
+                    <span class="label-sub">Standard Home</span>
+                  </div>
+                </label>
+                <label class="pill-option">
+                  <input type="radio" name="bhk_type" value="3 BHK">
+                  <div class="pill-label">
+                    <span class="icon"><i class="fa-solid fa-city"></i></span>
+                    <span class="label-title">3 BHK</span>
+                    <span class="label-sub">Spacious Flat</span>
+                  </div>
+                </label>
+                <label class="pill-option">
+                  <input type="radio" name="bhk_type" value="4 BHK / Villa">
+                  <div class="pill-label">
+                    <span class="icon"><i class="fa-solid fa-landmark"></i></span>
+                    <span class="label-title">4 BHK / Villa</span>
+                    <span class="label-sub">Luxury Estate</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 2: Carpet Area -->
+            <div>
+              <div class="option-group-title">
+                <span class="step-num">2</span> Carpet Area (Sq.Ft)
+              </div>
+              <div class="custom-range-container">
+                <div class="range-header">
+                  <span style="font-size: 0.95rem; color: var(--text-secondary);">Select Total Built-up Area:</span>
+                  <span class="range-value" id="carpetAreaValue">1050 sq.ft</span>
+                </div>
+                <input type="range" id="carpetAreaSlider" min="500" max="4500" step="50" value="1050">
+                <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">
+                  <span>500 sq.ft (Studio)</span>
+                  <span>2500 sq.ft</span>
+                  <span>4500 sq.ft (Villa)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Material Quality Tier -->
+            <div>
+              <div class="option-group-title">
+                <span class="step-num">3</span> Material &amp; Polish Grade
+              </div>
+              <div class="pill-selector-grid">
+                <label class="pill-option">
+                  <input type="radio" name="material_tier" value="essential">
+                  <div class="pill-label">
+                    <span class="label-title">Essential</span>
+                    <span class="label-sub">MR Grade + Matte Laminate</span>
+                  </div>
+                </label>
+                <label class="pill-option">
+                  <input type="radio" name="material_tier" value="premium" checked>
+                  <div class="pill-label">
+                    <span class="label-title">Premium</span>
+                    <span class="label-sub">IS 710 Marine Ply + High Gloss Acrylic</span>
+                  </div>
+                </label>
+                <label class="pill-option">
+                  <input type="radio" name="material_tier" value="luxury">
+                  <div class="pill-label">
+                    <span class="label-title">Ultra-Luxury</span>
+                    <span class="label-sub">Teakwood + Natural Veneer &amp; Marble</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 4: Included Scopes -->
+            <div>
+              <div class="option-group-title">
+                <span class="step-num">4</span> Room Modules &amp; Scope
+              </div>
+              <div class="pill-selector-grid">
+                <label class="pill-option">
+                  <input type="checkbox" name="scope" value="kitchen" data-name="Modular Kitchen" checked>
+                  <div class="pill-label">
+                    <span class="label-title">Modular Kitchen</span>
+                  </div>
+                </label>
+                <label class="pill-option">
+                  <input type="checkbox" name="scope" value="wardrobe" data-name="Wardrobes" checked>
+                  <div class="pill-label">
+                    <span class="label-title">Bedrooms &amp; Wardrobes</span>
+                  </div>
+                </label>
+                <label class="pill-option">
+                  <input type="checkbox" name="scope" value="living" data-name="Living & TV Unit" checked>
+                  <div class="pill-label">
+                    <span class="label-title">Living / TV Unit</span>
+                  </div>
+                </label>
+                <label class="pill-option">
+                  <input type="checkbox" name="scope" value="ceiling" data-name="False Ceiling & Ambient Lights">
+                  <div class="pill-label">
+                    <span class="label-title">False Ceiling &amp; Lights</span>
+                  </div>
+                </label>
+                <label class="pill-option">
+                  <input type="checkbox" name="scope" value="mandir" data-name="Pooja Mandir">
+                  <div class="pill-label">
+                    <span class="label-title">Pooja Mandir</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Calculation Summary Panel -->
+          <div class="calc-summary-panel">
+            <div>
+              <div class="summary-header">
+                <h3 style="font-size: 1.3rem; color: var(--gold-light);">Estimate Summary</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Direct Factory Pricing Model</p>
+              </div>
+
+              <ul class="summary-items">
+                <li class="summary-item">
+                  <span>Configuration:</span>
+                  <span id="summaryBhk">2 BHK</span>
+                </li>
+                <li class="summary-item">
+                  <span>Total Area:</span>
+                  <span id="summaryArea">1050 sq.ft</span>
+                </li>
+                <li class="summary-item">
+                  <span>Material Finish:</span>
+                  <span id="summaryMaterial">Premium (Teak & High Gloss)</span>
+                </li>
+                <li class="summary-item">
+                  <span>Selected Rooms:</span>
+                  <span id="summaryScope" style="font-size: 0.85rem; text-align: right; max-width: 180px;">Kitchen, Wardrobes, Living</span>
+                </li>
+                <li class="summary-item">
+                  <span>Hardware Included:</span>
+                  <span>Blum / Hafele Soft Close</span>
+                </li>
+                <li class="summary-item">
+                  <span>Warranty:</span>
+                  <span>10 Years Comprehensive</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="price-display-box">
+                <div class="label">Approximate Total Investment</div>
+                <div class="total-cost" id="totalEstimatedCost">₹5.85 Lakh</div>
+                <div class="note">*GST, 3D Rendering, Transport &amp; On-Site Assembly included</div>
+              </div>
+
+              <button onclick="window.print()" class="btn btn-primary btn-lg" style="width: 100%; margin-bottom: 12px;">
+                <i class="fa-solid fa-print"></i> Print / Save Estimate PDF
+              </button>
+              <a href="contact.html" class="btn btn-outline btn-sm" style="width: 100%; margin-bottom: 12px;">
+                <i class="fa-solid fa-file-invoice"></i> Book Architect Review
+              </a>
+              <a href="https://wa.me/917769881990?text=Hi%20Ma%20Aashapuri%20Interior,%20I%20used%20your%20cost%20estimator%20and%20want%20to%20discuss%20my%20floor%20plan." target="_blank" class="btn btn-outline btn-sm" style="width: 100%;">
+                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Real-Time Itemized Bill of Materials (BOM) Breakdown -->
+        <div style="margin-top: 48px; padding-top: 36px; border-top: 1px solid rgba(255, 255, 255, 0.08);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+            <div>
+              <h3 style="font-size: 1.4rem; color: var(--gold-light);"><i class="fa-solid fa-list-check"></i> Estimated Bill of Materials (BOM) Breakdown</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Dynamically calculated per selected carpet area &amp; material tier</p>
+            </div>
+            <button onclick="window.print()" class="btn btn-outline btn-sm">
+              <i class="fa-solid fa-download"></i> Export Quotation
+            </button>
+          </div>
+
+          <div class="table-responsive" style="overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%; margin: 18px 0;">
+            <table class="breakdown-table" style="min-width: 520px; width: 100%;">
+              <thead>
+                <tr>
+                  <th>Scope Component</th>
+                  <th>Material Specification</th>
+                  <th>Hardware Grade</th>
+                  <th style="text-align: right;">Approx. Share</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Woodwork Carcass &amp; Partitions</strong></td>
+                  <td>IS 710 BWP Marine Plywood Core (Termite Proof)</td>
+                  <td>Internal Joinery &amp; Fasteners</td>
+                  <td style="text-align: right;" id="bomWoodwork">₹3.39 Lakh</td>
+                </tr>
+                <tr>
+                  <td><strong>External Surface Finishes</strong></td>
+                  <td>Natural Wood Veneer / Anti-Scratch High Gloss Acrylic</td>
+                  <td>Laser 0.5mm Homag Edge Banding</td>
+                  <td style="text-align: right;" id="bomSurface">₹1.29 Lakh</td>
+                </tr>
+                <tr>
+                  <td><strong>Fittings &amp; Mechanisms</strong></td>
+                  <td>Soft-Close Dampers, Full Extension Drawers</td>
+                  <td>Blum Legrabox / Hafele Soft-Close Hinges</td>
+                  <td style="text-align: right;" id="bomHardware">₹70,000</td>
+                </tr>
+                <tr>
+                  <td><strong>3D Design, Logistics &amp; Installation</strong></td>
+                  <td>Site Laser Scanning, 3D Renders &amp; Turnkey Assembly</td>
+                  <td>Zero-Dust Site Delivery &amp; Deep Clean</td>
+                  <td style="text-align: right;" id="bomInstallation">₹47,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="brand-logo" style="margin-bottom: 18px;">
+          <img src="assets/images/logo/logo.png" alt="Ma Aashapuri Interior &amp; Bespoke Furniture Logo" class="brand-logo-img">
+          <div class="brand-text">
+            <span class="brand-name">MA AASHAPURI</span>
+            <span class="brand-tagline">INTERIOR &amp; BESPOKE FURNITURE</span>
+          </div>
+        </div>
+        <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 20px;">
+          India's leading luxury interior design atelier turning 2D architectural blueprints into handcrafted real-life living spaces.
+        </p>
+        <div style="display: flex; gap: 14px; font-size: 1.2rem; color: var(--gold-light);">
+          <a href="https://www.instagram.com/__ma_ashapurainterior?stkn=cDl4bDkxOGhnOTlz" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/917769881990" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:balvirsuthar191@gmail.com" title="Email Us"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="process.html">Paper to Reality Process</a></li>
+          <li><a href="portfolio.html">Portfolio Gallery</a></li>
+          <li><a href="calculator.html">Cost Estimator</a></li>
+          <li><a href="about.html">About Atelier</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Standard Packages</h4>
+        <ul class="footer-links">
+          <li><a href="#">1 BHK Modular Package (From ₹3.5L)</a></li>
+          <li><a href="#">2 BHK Full Interior (From ₹5.5L)</a></li>
+          <li><a href="#">3 BHK Luxury Finish (From ₹7.5L)</a></li>
+          <li><a href="#">Villa &amp; Duplex Turnkey</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Direct Contact</h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 10px;">
+          <i class="fa-solid fa-phone" style="color: var(--gold-primary);"></i> <a href="tel:+917769881990" style="color: inherit; font-weight: 600;">+91 7769881990</a> / <a href="tel:+917769881956" style="color: inherit; font-weight: 600;">+91 7769881956</a>
+        </p>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 10px;">
+          <i class="fa-solid fa-envelope" style="color: var(--gold-primary);"></i> <a href="mailto:balvirsuthar191@gmail.com" style="color: inherit;">balvirsuthar191@gmail.com</a>
+        </p>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 10px;">
+          <i class="fa-brands fa-instagram" style="color: var(--gold-primary);"></i> <a href="https://www.instagram.com/__ma_ashapurainterior?stkn=cDl4bDkxOGhnOTlz" target="_blank" rel="noopener noreferrer" style="color: inherit;">@_ma_ashapurainterior</a>
+        </p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div>&copy; 2026 Ma Aashapuri Interior &amp; Bespoke Furniture. All Rights Reserved.</div>
+      <div style="display: flex; gap: 20px;">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/917769881990?text=Hi%20Ma%20Aashapuri%20Interior,%20I%20have%20calculated%20my%20estimate%20and%20want%20to%20get%20an%20itemized%20quote." target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

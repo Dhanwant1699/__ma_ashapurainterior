@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Portfolio Gallery | Ma Aashapuri Furniture | Real-Life Completed Homes</title>
+  <meta name="description" content="Explore our extensive luxury interior design portfolio: modular kitchens, opulent living rooms, fluted master bedrooms, walk-in closets, and bespoke pooja mandirs built from paper designs.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+      <div>
+        ✨ <span>Experience Centre:</span> Visit our Walk-in Luxury Mockup Experience Studios
+      </div>
+      <div style="display: flex; gap: 16px; align-items: center; font-size: 0.85rem;">
+        <a href="tel:+917769881990" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-phone" style="color: var(--gold-primary);"></i> +91 7769881990</a>
+        <a href="tel:+917769881956" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-phone" style="color: var(--gold-primary);"></i> +91 7769881956</a>
+        <a href="mailto:balvirsuthar191@gmail.com" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-envelope" style="color: var(--gold-primary);"></i> balvirsuthar191@gmail.com</a>
+        <a href="https://www.instagram.com/__ma_ashapurainterior?stkn=cDl4bDkxOGhnOTlz" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;"><i class="fa-brands fa-instagram" style="color: var(--gold-primary);"></i> @_ma_ashapurainterior</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/images/logo/logo.png" alt="Ma Aashapuri Interior &amp; Bespoke Furniture Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">MA AASHAPURI</span>
+          <span class="brand-tagline">INTERIOR &amp; BESPOKE FURNITURE</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="process.html">Paper to Reality</a></li>
+        <li class="nav-item"><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li class="nav-item"><a href="calculator.html">Cost Estimator</a></li>
+        <li class="nav-item"><a href="about.html">About Us</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta-group">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-pen-ruler"></i> Book Consultation
+        </a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div class="mobile-nav-header">
+      <div class="brand-logo">
+        <img src="assets/images/logo/logo.png" alt="Ma Aashapuri Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">MA AASHAPURI</span>
+        </div>
+      </div>
+      <button class="mobile-close-btn" id="closeDrawerBtn">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="process.html">Paper to Reality</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="calculator.html">Cost Estimator</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 24px;">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">
+        <i class="fa-solid fa-calendar-check"></i> Book Design Consultation
+      </a>
+    </div>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- Page Header Banner -->
+  <section class="section-sm" style="background: radial-gradient(circle at 50% 30%, rgba(212, 175, 55, 0.1) 0%, transparent 60%), var(--bg-primary); border-bottom: 1px solid rgba(255,255,255,0.06);">
+    <div class="container" style="text-align: center;">
+      <div class="tag-badge"><span class="dot"></span> Curated Masterpieces</div>
+      <h1 style="font-size: clamp(2.4rem, 4vw, 3.6rem); margin-bottom: 16px;">
+        Delivered <span class="text-gradient-gold">Living Spaces</span>
+      </h1>
+      <p style="max-width: 720px; margin: 0 auto; font-size: 1.15rem;">
+        Browse through our completed real-life projects. Every single space was built from an initial client blueprint or paper sketch.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter & Portfolio Section -->
+  <section class="section">
+    <div class="container">
+      <!-- Filter Bar -->
+      <div class="portfolio-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Works</button>
+        <button class="filter-btn" data-filter="living">Living Rooms</button>
+        <button class="filter-btn" data-filter="kitchen">Italian Kitchens</button>
+        <button class="filter-btn" data-filter="bedroom">Master Bedrooms</button>
+        <button class="filter-btn" data-filter="wardrobe">Custom Wardrobes</button>
+        <button class="filter-btn" data-filter="mandir">Pooja Mandirs</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+        <!-- Project 1: Royal Peacock Living -->
+        <div class="portfolio-item" data-category="living" data-project="peacock_living">
+          <div class="portfolio-thumb">
+            <img src="assets/images/real_work/living_room_curved_sofa_wide.jpg" alt="The Royal Peacock Pavilion Living Lounge">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">Living &amp; Lounge</span>
+              <h3 class="portfolio-title">The Royal Peacock Pavilion</h3>
+              <p class="portfolio-location"><i class="fa-solid fa-location-dot"></i> Curved Bouclé Lounge &amp; Brass Jhula</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Real Calacatta Media Wall (Real Execution) -->
+        <div class="portfolio-item" data-category="living" data-project="real_marble_tv">
+          <div class="portfolio-thumb">
+            <img src="assets/images/real_work/real_tv_unit_marble_wide.jpg" alt="Calacatta Marble & Carved Terracotta Console">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">Real Built Handover</span>
+              <h3 class="portfolio-title">Calacatta Marble Media Wall</h3>
+              <p class="portfolio-location"><i class="fa-solid fa-location-dot"></i> Live On-Site Handover | Fireplace Recess</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Real Fluted TV Unit with Cove Lighting (Real Execution) -->
+        <div class="portfolio-item" data-category="living" data-project="fluted_tv_cove">
+          <div class="portfolio-thumb">
+            <img src="assets/images/real_work/real_tv_unit_fluted_cove_vertical.jpg" alt="Modern Fluted Oak Media Wall with Cove Glow">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">Real Built Handover</span>
+              <h3 class="portfolio-title">Fluted Oak Media Wall</h3>
+              <p class="portfolio-location"><i class="fa-solid fa-location-dot"></i> Live On-Site Handover | Concealed LEDs</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: The Peacock Sanctuary Master Suite -->
+        <div class="portfolio-item" data-category="bedroom" data-project="peacock_bedroom">
+          <div class="portfolio-thumb">
+            <img src="assets/images/real_work/bedroom_peacock_arch_wide.jpg" alt="The Peacock Sanctuary Master Suite">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">Master Bedroom</span>
+              <h3 class="portfolio-title">Peacock Sanctuary Master Suite</h3>
+              <p class="portfolio-location"><i class="fa-solid fa-location-dot"></i> Arched Heritage Bedhead &amp; Wood Inlays</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Arched Vanity & Dressing Atelier -->
+        <div class="portfolio-item" data-category="bedroom" data-project="vanity_dressing">
+          <div class="portfolio-thumb">
+            <img src="assets/images/real_work/bedroom_vanity_mirror_angle.jpg" alt="Arched Vanity Mirror & Dressing Atelier">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">Dressing &amp; Vanity</span>
+              <h3 class="portfolio-title">Arched Vanity &amp; Dressing Alcove</h3>
+              <p class="portfolio-location"><i class="fa-solid fa-location-dot"></i> Full-Length Mirror &amp; Integrated Shelves</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: High-Gloss Emerald Capsule Wardrobe (Real Execution) -->
+        <div class="portfolio-item" data-category="wardrobe" data-project="capsule_wardrobe">
+          <div class="portfolio-thumb">
+            <img src="assets/images/real_work/real_wardrobe_capsule_gloss_vertical.jpg" alt="High-Gloss Emerald & Alabaster Capsule Wardrobe">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">Real Built Handover</span>
+              <h3 class="portfolio-title">Emerald Capsule Wardrobe</h3>
+              <p class="portfolio-location"><i class="fa-solid fa-location-dot"></i> Live On-Site Handover | Arched Alcove</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Two-Tone Fluted Base Wardrobe (Real Execution) -->
+        <div class="portfolio-item" data-category="wardrobe" data-project="fluted_wardrobe">
+          <div class="portfolio-thumb">
+            <img src="assets/images/real_work/real_wardrobe_fluted_base_vertical.jpg" alt="Terracotta Fluted & Silk Gloss 4-Door Wardrobe">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">Real Built Handover</span>
+              <h3 class="portfolio-title">Terracotta Fluted Wardrobe</h3>
+              <p class="portfolio-location"><i class="fa-solid fa-location-dot"></i> Live On-Site Handover | Matching Door</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8: Matte Cashmere Modular Kitchen -->
+        <div class="portfolio-item" data-category="kitchen" data-project="cashmere_kitchen">
+          <div class="portfolio-thumb">
+            <img src="assets/images/real_work/kitchen_modular_cooktop.jpg" alt="Matte Cashmere Handleless Modular Kitchen">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">Modular Kitchen</span>
+              <h3 class="portfolio-title">Matte Cashmere Kitchen</h3>
+              <p class="portfolio-location"><i class="fa-solid fa-location-dot"></i> Handleless Gola Profiles &amp; Quartz Stone</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9: Kitchen Pantry & Fridge Station -->
+        <div class="portfolio-item" data-category="kitchen" data-project="kitchen_pantry">
+          <div class="portfolio-thumb">
+            <img src="assets/images/real_work/kitchen_pantry_fridge_station.jpg" alt="Integrated Breakfast Pantry & Refrigerator Station">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">Modular Kitchen</span>
+              <h3 class="portfolio-title">Breakfast Pantry &amp; Fridge Station</h3>
+              <p class="portfolio-location"><i class="fa-solid fa-location-dot"></i> Fluted Glass Cabinet &amp; Open Niche</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 10: Botanical Arch Entryway Foyer -->
+        <div class="portfolio-item" data-category="living" data-project="botanical_foyer">
+          <div class="portfolio-thumb">
+            <img src="assets/images/real_work/entryway_botanical_arch.jpg" alt="Minimalist Botanical Arch Entryway Foyer">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">Foyer &amp; Entryway</span>
+              <h3 class="portfolio-title">Botanical Arch Foyer</h3>
+              <p class="portfolio-location"><i class="fa-solid fa-location-dot"></i> Capsule Art Mural &amp; Flush Secret Door</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 11: Hanging Jhula Swing & Jharokha Mirrors -->
+        <div class="portfolio-item" data-category="living" data-project="jhula_living">
+          <div class="portfolio-thumb">
+            <img src="assets/images/real_work/living_room_jhula_swing_front.jpg" alt="Hanging Jhula Swing with Brass Chains">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">Living &amp; Lounge</span>
+              <h3 class="portfolio-title">Traditional Brass Jhula Lounge</h3>
+              <p class="portfolio-location"><i class="fa-solid fa-location-dot"></i> 9 Jharokha Mirrors &amp; Teak Swing</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 12: Vastu Backlit Pooja Mandir -->
+        <div class="portfolio-item" data-category="mandir" data-project="mandir">
+          <div class="portfolio-thumb">
+            <img src="assets/images/mandir.jpg" alt="Vastu Backlit Pooja Mandir">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">Pooja Mandir</span>
+              <h3 class="portfolio-title">Backlit CNC Brass Mandir</h3>
+              <p class="portfolio-location"><i class="fa-solid fa-location-dot"></i> 100% Vastu Orientation &amp; Solid Teak</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section-sm" style="background: var(--bg-secondary); border-top: 1px solid var(--gold-border);">
+    <div class="container" style="text-align: center;">
+      <h2 style="font-size: 2.2rem; margin-bottom: 14px;">Love What You See? Let's Build Yours!</h2>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 28px;">
+        Share your apartment floor plan or sketches. We will provide a 3D walkthrough and precise quote.
+      </p>
+      <a href="contact.html" class="btn btn-primary btn-lg">
+        <i class="fa-solid fa-calendar-check"></i> Book Design Consultation
+      </a>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="brand-logo" style="margin-bottom: 18px;">
+          <img src="assets/images/logo/logo.png" alt="Ma Aashapuri Interior &amp; Bespoke Furniture Logo" class="brand-logo-img">
+          <div class="brand-text">
+            <span class="brand-name">MA AASHAPURI</span>
+            <span class="brand-tagline">INTERIOR &amp; BESPOKE FURNITURE</span>
+          </div>
+        </div>
+        <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 20px;">
+          India's leading luxury interior design atelier turning 2D architectural blueprints into handcrafted real-life living spaces.
+        </p>
+        <div style="display: flex; gap: 14px; font-size: 1.2rem; color: var(--gold-light);">
+          <a href="https://www.instagram.com/__ma_ashapurainterior?stkn=cDl4bDkxOGhnOTlz" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/917769881990" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:balvirsuthar191@gmail.com" title="Email Us"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="process.html">Paper to Reality Process</a></li>
+          <li><a href="portfolio.html">Portfolio Gallery</a></li>
+          <li><a href="calculator.html">Cost Estimator</a></li>
+          <li><a href="about.html">About Atelier</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Quality</h4>
+        <ul class="footer-links">
+          <li><a href="#">IS 710 Marine Grade Wood</a></li>
+          <li><a href="#">German Homag CNC Cutting</a></li>
+          <li><a href="#">Blum Soft-Close Systems</a></li>
+          <li><a href="#">10-Year Warranty</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Direct Contact</h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 10px;">
+          <i class="fa-solid fa-phone" style="color: var(--gold-primary);"></i> <a href="tel:+917769881990" style="color: inherit; font-weight: 600;">+91 7769881990</a> / <a href="tel:+917769881956" style="color: inherit; font-weight: 600;">+91 7769881956</a>
+        </p>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 10px;">
+          <i class="fa-solid fa-envelope" style="color: var(--gold-primary);"></i> <a href="mailto:balvirsuthar191@gmail.com" style="color: inherit;">balvirsuthar191@gmail.com</a>
+        </p>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 10px;">
+          <i class="fa-brands fa-instagram" style="color: var(--gold-primary);"></i> <a href="https://www.instagram.com/__ma_ashapurainterior?stkn=cDl4bDkxOGhnOTlz" target="_blank" rel="noopener noreferrer" style="color: inherit;">@_ma_ashapurainterior</a>
+        </p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <div>&copy; 2026 Ma Aashapuri Interior &amp; Bespoke Furniture. All Rights Reserved.</div>
+      <div style="display: flex; gap: 20px;">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/917769881990?text=Hi%20Ma%20Aashapuri%20Interior,%20I%20love%20your%20portfolio%20and%20want%20to%20consult%20for%20my%20home." target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# Temporary scratch scripts & testing output
+scratch/
+__pycache__/
+*.pyc
+
+# Vercel & Environment
+.vercel/
+.env*
+
+# OS Files
+.DS_Store
+Thumbs.db
