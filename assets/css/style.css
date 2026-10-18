@@ -437,7 +437,7 @@ img {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
   list-style: none;
 }
 
@@ -447,6 +447,7 @@ img {
   color: var(--text-secondary);
   position: relative;
   padding: 6px 0;
+  white-space: nowrap !important;
 }
 
 .nav-item a:hover, .nav-item a.active {
@@ -1586,7 +1587,65 @@ textarea.form-control {
 
 /* --- Responsive Media Queries --- */
 
-/* 1. Large Tablets & Medium Screens */
+/* 1. Compact Laptops & Medium Desktops (1024px - 1240px) */
+@media (min-width: 1024px) and (max-width: 1240px) {
+  .brand-logo-img {
+    height: 44px;
+    max-width: 52px;
+  }
+  .brand-name {
+    font-size: 1.1rem;
+  }
+  .brand-tagline {
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+  }
+  .nav-links {
+    gap: 14px;
+  }
+  .nav-item a {
+    font-size: 0.86rem;
+    padding: 4px 0;
+    white-space: nowrap !important;
+  }
+  .nav-cta-group {
+    gap: 8px;
+  }
+  .nav-cta-group .btn-sm {
+    padding: 7px 12px !important;
+    font-size: 0.8rem !important;
+  }
+}
+
+/* 2. Tablets (Under 1024px: iPad, Tablet landscape/portrait) */
+@media (max-width: 1023px) {
+  /* Switch navigation to sleek mobile drawer */
+  .nav-links {
+    display: none !important;
+  }
+  .hamburger-btn {
+    display: flex !important;
+  }
+  .brand-logo-img {
+    height: 46px;
+    max-width: 55px;
+  }
+  .brand-name {
+    font-size: 1.1rem;
+  }
+  .brand-tagline {
+    font-size: 0.6rem;
+  }
+  .nav-cta-group {
+    gap: 10px;
+  }
+  .nav-cta-group .btn-sm {
+    padding: 8px 14px !important;
+    font-size: 0.82rem !important;
+  }
+}
+
+/* 3. Large Tablets & Medium Screens */
 @media (max-width: 991px) {
   /* Remove top announcement bar on mobile & tablets */
   .top-announcement {
@@ -1611,7 +1670,7 @@ textarea.form-control {
   }
 }
 
-/* 2. Mobile Screens & Handheld Devices */
+/* 4. Mobile Screens & Handheld Devices (Phones <= 768px) */
 @media (max-width: 768px) {
   /* Complete removal of announcement bar on mobile */
   .top-announcement {
@@ -1626,7 +1685,7 @@ textarea.form-control {
     max-width: 100% !important;
   }
 
-  /* Navigation Header on Mobile */
+  /* Navigation Header on Mobile Phones */
   .nav-links, .nav-cta-group .btn {
     display: none !important;
   }
